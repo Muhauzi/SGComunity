@@ -5,21 +5,21 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-user"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SGcomunity <sup>User</sup></div>
+                <div class="sidebar-brand-text mx-3">SGcomunity <sup>Dashboard</sup></div>
             </a>
 
             <!-- Divider -->
             <hr class="sidebar-divider">
 
             <?php if(in_groups('admin')): ?>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= base_url('admin') ;?>">
-                    <i class="fas fa-user"></i>
-                    <span>Dashboard Admin</span></a>
+                <li class="nav-item mx-3 text-white">
+                    <i class="fas fa-user-tie"></i>
+                    <span><b>Menu Admin</b></span>
                 </li>
                 <li class="nav-item">
-                    
-                    <a class="nav-link" href="<?= base_url('user/adduser') ?>"><i class="fas fa-user-edit"></i><span>Daftarkan Pengguna</span></a>
+                    <a class="nav-link" href="<?= base_url('admin') ;?>">
+                    <i class="fas fa-users"></i>
+                    <span>Menu Users</span></a>
                 </li>
                 <hr class="sidebar-divider">
             <?php endif; ?>
@@ -27,6 +27,10 @@
             
 
             <!-- Nav Item - Charts -->
+            <li class="nav-item mx-3 text-white">
+                    <i class="fas fa-cirle-user"></i>
+                    <span><b>Menu Pengguna</b></span>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="<?= base_url('user/profile') ;?>">
                     <i class="fas fa-user"></i>

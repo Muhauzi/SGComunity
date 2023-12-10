@@ -6,7 +6,8 @@
 <!-- Page Heading -->
     <h1 class="h3 mb-4 text-gray-800">User Table</h1>
 
-    
+    <?= view('Myth\Auth\Views\_message_block') ?>
+    <a class="btn btn-primary mb-3" href="<?= base_url('admin/tambahUser') ?>">Daftarkan Pengguna</a>
     <div class="row">
         <div class="col-md-8">
         <table class="table">
