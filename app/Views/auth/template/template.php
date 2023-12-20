@@ -30,6 +30,25 @@
 
     <?= $this->renderSection('content'); ?>
 
+    <script>
+        const eyes = document.getElementById('eyes')
+        const password = document.getElementById("password")
+        
+        const togglePassword = () => {
+            if (eyes.classList == "fa-solid fa-eye-slash") {
+                const type = password.getAttribute("type") === "password" ? "text" : "password"
+                
+                password.setAttribute("type", type)
+                eyes.className = "fa-solid fa-eye"
+            } else {
+                const type = password.getAttribute("type") === "text" ? "password" : "text"
+                
+                password.setAttribute("type", type)
+                eyes.className = "fa-solid fa-eye-slash"
+            }
+        }
+    </script>
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/07df810a55.js" crossorigin="anonymous"></script>
 
@@ -43,5 +62,4 @@
     <script src="<?= base_url();?>/js/sb-admin-2.min.js"></script>
 
 </body>
-
 </html>

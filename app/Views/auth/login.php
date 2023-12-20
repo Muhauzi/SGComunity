@@ -50,7 +50,8 @@
                                     <!-- Password -->
                                     <div class="input-group border-0 mb-3">
                                         <span class="input-group-text border-0" id="icon"><i class="fa-solid fa-lock"></i></span>
-                                        <input type="password" name="password" class="form-control border-0 form-control-user <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?=lang('Auth.password')?>">
+                                        <input type="password" name="password" id="password" class="form-control border-0 form-control-user <?php if (session('errors.password')) : ?>is-invalid<?php endif ?>" placeholder="<?=lang('Auth.password')?>">
+                                        <span class="input-group-text border-0" id="icon" onclick="togglePassword()"><i class="fa-solid fa-eye-slash" id="eyes"></i></span>
                                         <div class="invalid-feedback">
                                             <?= session('errors.password') ?>
                                         </div>
